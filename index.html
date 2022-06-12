@@ -8,16 +8,37 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li>How It Works</li>
-                <li>Plan Your Trip</li>
-                <li>Destinations</li>
-                <li>Travel Stories</li>
-            </ul>
-        </nav>
+    <header class="header">
+        <div class="wrapper">
+            <div class="header_wrapper">
+                <div class="logo">
+                    <object type="image/svg+xml" data="./assets/img/logo.svg"></object>
+                    <span>Travel Portal</span>
+                </div>
+                <nav class="nav">
+                    <ul class="header_nav">
+                        <li class="header_nav_list">How It Works</li>
+                        <li class="header_nav_list">Plan Your Trip</li>
+                        <li class="header_nav_list">Destinations</li>
+                        <li class="header_nav_list">Travel Stories</li>
+                    </ul>
+                </nav>
+                <div class="header_login">
+                    <button class="button">Login</button>
+                </div>
+            </div>
+        </div>
     </header>
+    <main class="main">
+        <div class="wrapper">
+            <section class="preview">
+                <div class="plan_your_trip"></div>
+            </section>
+            <section class="steps"></section>
+            <section class="destinations"></section>
+            <section class="stories"></section>
+        </div>
+    </main>
     
 </body>
 </html>
