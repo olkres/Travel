@@ -1,0 +1,147 @@
+  @font-face {
+    font-family: 'Red Hat Text';
+    src: url('./assets/fonts/RedHatText-Regular.ttf'); 
+  }
+
+  @font-face {
+    font-family: 'Magra';
+    src: url('./assets/fonts/Magra-Regular.ttf');
+  }
+  @font-face {
+    font-family: 'Aleo';
+    font-weight: 400;
+    src: url('./assets/fonts/Aleo-Regular.ttf');
+  }
+  @font-face {
+    font-family: 'Aleo';
+    font-weight: 700;
+    src: url('./assets/fonts/Aleo-Bold.ttf');
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+  .wrapper {
+    max-width: 1440px;
+    margin: 0 auto;
+  }
+
+  .header_wrapper {
+    position: absolute;
+    background-color: rgba(242, 120, 92, 0.7);
+    box-shadow: 0px 4px 4px rgba(13, 96, 111, 0.5);
+    display: flex;
+    justify-content: space-between;
+    padding: 0 120px;
+    align-items: center;
+    height: 90px;
+    width: 1440px;
+  }
+
+  .header_nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-decoration: none;
+    gap: 42px;
+  }
+
+  .header_nav_list {
+    list-style: none;
+    font-family: 'Red Hat Text';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 21px;
+    color: #FFFFFF;
+  }
+
+  .logo {
+    width: 216px;
+    height: 31px;
+    font-family: 'Magra';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 39px;
+    color: #FFFFFF;
+  }
+
+  .button {
+    width: 103px;
+    height: 41px;
+    background: #0D606F;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 2px 3px rgba(13, 96, 111, 0.16);
+    border: 0px;
+    border-radius: 10px;
+    font-family: 'Red Hat Text';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 21px;
+    color: #FFFFFF;
+  }
+
+  .preview {
+    background-image: url('./assets/img/garrett-parker-DlkF4-dbCOU-unsplash1.jpg');
+    height: 765px;
+  }
+
+  .plan_your_trip {
+    padding-top: 122px;
+    width: 892px;
+    height: 422px;
+  }
+
+  .title {
+    font-family: 'Aleo';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 80px;
+    line-height: 96px;
+    color: #FFFFFF;
+  }
+
+  .title_text {
+    font-family: 'Aleo';
+    font-style: italic;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    color: #FFFFFF;
+  }
+
+  .planning_form {
+    width: 892px;
+    height: 95px;
+  }
+
+  .start_planning {
+    background: #0D606F;
+    width: 228px;
+    height: 59px;
+    border: 0px;
+    font-family: 'Red Hat Text';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 32px;
+    color: #FFFFFF;
+    border-radius: 10px;
+  }
+
+  .planning_form_search {
+    font-family: 'Aleo';
+    font-style: italic;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    border: 0px;
+    color: #F2785C;
+    background-color: rgba(0, 0, 0, 0);
+  }
+
+  .planning_form_search::placeholder {
+    color: #F2785C;
+  }
