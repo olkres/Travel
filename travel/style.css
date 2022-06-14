@@ -1,10 +1,12 @@
   @font-face {
     font-family: 'Red Hat Text';
+    font-weight: 500;
     src: url('./assets/fonts/RedHatText-Regular.ttf'); 
   }
 
   @font-face {
     font-family: 'Magra';
+    font-weight: 600;
     src: url('./assets/fonts/Magra-Regular.ttf');
   }
   @font-face {
@@ -12,7 +14,14 @@
     font-weight: 400;
     src: url('./assets/fonts/Aleo-Regular.ttf');
   }
+    
   @font-face {
+      font-family: 'Aleo';
+      font-style: italic;
+      font-weight: 400;
+      src: url('./assets/fonts/Aleo-Italic.ttf');
+  }
+   @font-face {
     font-family: 'Aleo';
     font-weight: 700;
     src: url('./assets/fonts/Aleo-Bold.ttf');
