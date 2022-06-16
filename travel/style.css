@@ -154,3 +154,31 @@
   .planning_form_search::placeholder {
     color: #F2785C;
   }
+
+  .steps_pic {
+    background-color: #F2785C;
+    border-radius: 10%;
+    width: 100px;
+    height: 100px;
+  }
+
+  .pic1 {
+    background-image: url('./assets/img/bike.svg');
+    background-size: 50px 45px;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .pic2 {
+    background-image: url('./assets/img/calendar.svg');
+    background-size: 50px 45px;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .pic3 {
+    background-image: url('./assets/img/plane.svg');
+    background-size: 50px 45px;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
