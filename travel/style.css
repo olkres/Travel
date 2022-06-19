@@ -37,7 +37,7 @@
   }
 
   .header_wrapper {
-    position: absolute;
+    position: relative;
     background-color: rgba(242, 120, 92, 0.7);
     box-shadow: 0px 4px 4px rgba(13, 96, 111, 0.5);
     display: flex;
@@ -45,7 +45,7 @@
     padding: 0 120px;
     align-items: center;
     height: 90px;
-    width: 1440px;
+    width: 100%;
   }
 
   .header_nav {
@@ -95,6 +95,7 @@
   .preview {
     background-image: url('./assets/img/garrett-parker-DlkF4-dbCOU-unsplash1.jpg');
     height: 765px;
+    margin-top: -90px;
   }
 
   .plan_your_trip {
@@ -155,6 +156,10 @@
     color: #F2785C;
   }
 
+  .perfect_trip {
+    display: flex;
+  }
+
   .steps_pic {
     background-color: #F2785C;
     border-radius: 10%;
@@ -182,3 +187,54 @@
     background-position: center;
     background-repeat: no-repeat;
   }
+
+  .carousel {
+    display: flex;
+    gap: 60px;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+  }
+
+  .destination_radio {
+    position: relative;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin: 0 3px;
+}
+
+.radio__input {
+    position: absolute;
+    appearance: none;
+}
+
+.radio__box {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-color: rgba(242, 120, 92, 0.5);
+    border-radius: 50%;
+    transition: all 0.2s ease;
+    cursor: pointer;
+}
+
+.radio__input:checked + .radio__box {
+    
+    background-color: #F2785C;
+}
+
+.find {
+    background: #0D606F;
+    border: 0px;
+    border-radius: 10px;
+    width: 228px;
+    height: 59px;
+    font-family: 'Red Hat Text';
+    font-weight: 500;
+    font-size: 24px;
+    color: #FFFFFF;
+}
