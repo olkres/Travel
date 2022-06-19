@@ -7,7 +7,7 @@
   @font-face {
     font-family: 'Magra';
     font-weight: 600;
-    src: url('./assets/fonts/Magra-Regular.ttf');
+    src: url('./assets/fonts/Magra-Bold.ttf');
   }
   @font-face {
     font-family: 'Aleo';
@@ -67,11 +67,7 @@
   }
 
   .logo {
-    width: 216px;
-    height: 31px;
     font-family: 'Magra';
-    font-style: normal;
-    font-weight: 600;
     font-size: 32px;
     line-height: 39px;
     color: #FFFFFF;
@@ -120,6 +116,13 @@
     font-size: 20px;
     line-height: 24px;
     color: #FFFFFF;
+  }
+
+  .topic {
+    font-family: 'Red Hat Text';
+    font-size: 40px;
+    text-align: center;
+    color:#F2785C;
   }
 
   .planning_form {
@@ -237,4 +240,59 @@
     font-weight: 500;
     font-size: 24px;
     color: #FFFFFF;
+}
+
+.travel_stories_background {
+    height: 1270px;
+    background: rgba(255, 255, 255, 0.7);
+    display: flex;
+    flex-flow: column;
+    justify-content: space-evenly;
+}
+
+.travel_stories {
+    height: 1331px;
+    background: url(./assets/img/Rectangle\ 33.jpg);
+}
+
+.travel_stories_description {
+    display: flex;
+    flex-flow: column;
+}
+
+.travel_stories_title {
+    font-family: 'Aleo';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 42px;
+    color: #0D606F;
+    margin: 0;
+}
+
+.travel_stories_text {
+    font-family: 'Aleo';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    color: #0D606F;
+}
+
+.read_more {
+    font-family: 'Aleo';
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    color: #0D606F;
+}
+
+.story {
+    display: flex;
+    padding: 0px 122px 0px 119px;
+}
+
+.footer {
+    display: flex;
+    margin-top: -60px;
 }
