@@ -1,5 +1,6 @@
   @font-face {
     font-family: 'Red Hat Text';
+    font-style: normal;
     font-weight: 500;
     src: url('./assets/fonts/RedHatText-Medium.ttf'); 
   }
@@ -60,6 +61,7 @@
     justify-content: space-between;
     align-items: center;
     text-decoration: none;
+    padding-left: 8px;
   }
 
   .header_nav_list {
@@ -128,6 +130,7 @@
 
   .topic {
     font-family: 'Red Hat Text';
+    font-weight: 500;
     font-size: 40px;
     text-align: center;
     color:#F2785C;
@@ -181,34 +184,62 @@
 
   .perfect_trip {
     display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+    padding: 0 132px;
+  }
+
+  .steps {
+    margin-top: 80px;
+  } 
+
+  .steps_text {
+    font-family: 'Aleo';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    color: #0D606F;
+    margin-top: 30px;
   }
 
   .steps_pic {
     background-color: #F2785C;
-    border-radius: 10%;
+    border-radius: 16px;
     width: 100px;
     height: 100px;
   }
 
+  .steps_pics:nth-child(2) {
+    padding-left: 70px;
+  }
+
   .pic1 {
     background-image: url('./assets/img/bike.svg');
-    background-size: 50px 45px;
     background-position: center;
     background-repeat: no-repeat;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .pic2 {
     background-image: url('./assets/img/calendar.svg');
-    background-size: 50px 45px;
     background-position: center;
     background-repeat: no-repeat;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .pic3 {
     background-image: url('./assets/img/plane.svg');
-    background-size: 50px 45px;
     background-position: center;
     background-repeat: no-repeat;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .destinations {
+    margin-top: 96px;
   }
 
   .carousel {
@@ -217,6 +248,25 @@
     justify-content: center;
     align-items: center;
     overflow: hidden;
+    margin-top: 48px;
+  }
+
+  .country_pic {
+    border-radius: 16px;
+  }
+  
+  .destination {
+    position: relative;
+  }
+
+  .destination_country {
+    position: absolute;
+    left:15px;
+    bottom: 44px;
+    font-family: 'Red Hat Text';
+    font-size: 32px;
+    line-height: 42px;
+    color: #FFFFFF;
   }
 
   .destination_radio {
@@ -225,60 +275,80 @@
     width: 20px;
     height: 20px;
     margin: 0 3px;
-}
+    margin-top: 19px;
+    left: 677px;
+  }
 
-.radio__input {
-    position: absolute;
-    appearance: none;
-}
+  .radio__input {
+      position: absolute;
+      appearance: none;
+  }
 
-.radio__box {
-    position: absolute;
-    top: 0;
-    left: 0;
-    display: inline-block;
-    width: 20px;
-    height: 20px;
-    background-color: rgba(242, 120, 92, 0.5);
-    border-radius: 50%;
-    transition: all 0.2s ease;
-    cursor: pointer;
-}
+  .radio__box {
+      position: absolute;
+      top: 0;
+      left: 0;
+      display: inline-block;
+      width: 20px;
+      height: 20px;
+      background-color: rgba(242, 120, 92, 0.5);
+      border-radius: 50%;
+      transition: all 0.2s ease;
+      cursor: pointer;
+  }
 
-.radio__input:checked + .radio__box {
-    
-    background-color: #F2785C;
-}
+  .radio__input:checked + .radio__box {
+      
+      background-color: #F2785C;
+  }
 
-.find {
+  .find_more {
+    margin-top: 36px;
+    width: 228px;
+    margin-left: auto;
+    margin-right: auto;
+
+  }
+
+  .find {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0 31px;
     background: #0D606F;
     border: 0px;
     border-radius: 10px;
     width: 228px;
     height: 59px;
     font-family: 'Red Hat Text';
-    font-weight: 500;
     font-size: 24px;
     color: #FFFFFF;
+}
+
+.stories {
+  margin-top: 81px;
+}
+
+.story_img {
+  border-radius: 16px;
+  box-shadow: 0px 4px 4px #0d606f;
 }
 
 .travel_stories_background {
     height: 1270px;
     background: rgba(255, 255, 255, 0.7);
-    display: flex;
-    flex-flow: column;
-    justify-content: space-evenly;
 }
 
 .travel_stories {
+    margin-top: 40px;
     height: 1331px;
     background: url(./assets/img/Rectangle\ 33.jpg);
 }
 
-.travel_stories_description {
+/*.travel_stories_description {
     display: flex;
     flex-flow: column;
-}
+}*/
 
 .travel_stories_title {
     font-family: 'Aleo';
@@ -290,6 +360,10 @@
     margin: 0;
 }
 
+.travel_stories_description {
+    padding-left: 40px;
+}
+
 .travel_stories_text {
     font-family: 'Aleo';
     font-style: normal;
@@ -297,6 +371,8 @@
     font-size: 20px;
     line-height: 24px;
     color: #0D606F;
+    margin: 0;
+    margin-top: 23px;
 }
 
 .read_more {
@@ -309,10 +385,36 @@
 
 .story {
     display: flex;
-    padding: 0px 122px 0px 119px;
+    padding: 0 120px;
+    margin-top: 30px;
+}
+
+.story:nth-child(1) {
+  padding-top: 40px;
 }
 
 .footer {
-    display: flex;
-    margin-top: -60px;
+  display: flex;
+  align-items: center;
+  margin-top: -60px;
+  justify-content: flex-end;
+  padding-right: 120px;
+  height: 60px;
+  gap: 310px;
+}
+
+.copyright {
+  font-family: 'Red Hat Text';
+  font-size: 16px;
+  line-height: 21px;
+  color: #FFFFFF;
+}
+
+.social-list {
+  display: flex;
+  align-items: center;
+}
+
+.social-item {
+  padding-left: 21px;
 }
