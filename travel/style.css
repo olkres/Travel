@@ -1,7 +1,7 @@
   @font-face {
     font-family: 'Red Hat Text';
     font-weight: 500;
-    src: url('./assets/fonts/RedHatText-Regular.ttf'); 
+    src: url('./assets/fonts/RedHatText-Medium.ttf'); 
   }
 
   @font-face {
@@ -18,10 +18,18 @@
   @font-face {
       font-family: 'Aleo';
       font-style: italic;
-      font-weight: 400;
-      src: url('./assets/fonts/Aleo-Italic.ttf');
+      font-weight: 700;
+      src: url('./assets/fonts/Aleo-BoldItalic.ttf');
   }
-   @font-face {
+
+  @font-face {
+    font-family: 'Aleo';
+    font-style: italic;
+    font-weight: 400;
+    src: url('./assets/fonts/Aleo-Italic.ttf');
+  }
+   
+  @font-face {
     font-family: 'Aleo';
     font-weight: 700;
     src: url('./assets/fonts/Aleo-Bold.ttf');
@@ -45,7 +53,6 @@
     padding: 0 120px;
     align-items: center;
     height: 90px;
-    width: 100%;
   }
 
   .header_nav {
@@ -53,7 +60,6 @@
     justify-content: space-between;
     align-items: center;
     text-decoration: none;
-    gap: 42px;
   }
 
   .header_nav_list {
@@ -64,6 +70,7 @@
     font-size: 16px;
     line-height: 21px;
     color: #FFFFFF;
+    padding-right: 42px;
   }
 
   .logo {
@@ -96,11 +103,11 @@
 
   .plan_your_trip {
     padding-top: 122px;
-    width: 892px;
-    height: 422px;
+    padding-left: 120px;
   }
 
   .title {
+    margin: 0;
     font-family: 'Aleo';
     font-style: normal;
     font-weight: 700;
@@ -110,6 +117,7 @@
   }
 
   .title_text {
+    margin-top: 32px;
     font-family: 'Aleo';
     font-style: italic;
     font-weight: 700;
@@ -126,8 +134,19 @@
   }
 
   .planning_form {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 46px;
     width: 892px;
     height: 95px;
+    border-radius: 16px;
+    background: rgba(255, 255, 255, 0.7);
+    border: none;
+  }
+
+  .start_planning_button {
+    padding-right: 18px;
   }
 
   .start_planning {
@@ -153,6 +172,7 @@
     border: 0px;
     color: #F2785C;
     background-color: rgba(0, 0, 0, 0);
+    padding-left: 41px;
   }
 
   .planning_form_search::placeholder {
