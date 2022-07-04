@@ -14,7 +14,7 @@
             <div class="header_wrapper">
                 <div class="logo">
                     <object type="image/svg+xml" data="./assets/img/logo.svg"></object>
-                    <span>Travel Portal</span>
+                    <span class="company_name">Travel Portal</span>
                 </div>
                 <nav class="nav">
                     <ul class="header_nav">
@@ -22,31 +22,44 @@
                         <li class="header_nav_list"><a href="#plan_trip" class="nav_list">Plan Your Trip</a></li>
                         <li class="header_nav_list"><a href="#destinations" class="nav_list">Destinations</a></li>
                         <li class="header_nav_list"><a href="#travel_stories" class="nav_list">Travel Stories</a></li>
+                        <li class="header_nav_list"><a href="#travel_stories" class="nav_list nav_list_inactive">Account</a></li>
+                        <li class="header_nav_list"><a href="#travel_stories" class="nav_list nav_list_inactive">Social Media</a></li>
                     </ul>
+                    <div class="nav-close">
+                        <span class="nav-close-line"></span>
+                        <span class="nav-close-line"></span>
+                    </div>
                 </nav>
                 <div class="header_login">
                     <button class="button">Login</button>
+                </div>
+                <div class="header-burger burger">
+                    <span class="burger-line burger-line-first"></span>
+                    <span class="burger-line burger-line-second"></span>
+                    <span class="burger-line burger-line-third"></span>
                 </div>
             </div>
         </div>
     </header>
     <main class="main">
-        <div class="wrapper">
-            <section class="preview">
-                <div class="plan_your_trip">
-                    <h1 class="title">Explore the beauty of<br> the World</h1>
-                    <p class="title_text">Receive personalized recommendations for countries, hotels, activities and more</p>
-                    <div class="planning_form">
-                        <input type="text" class="planning_form_search" name="user_like_to_do" placeholder="What would you like to do?">
-                        <div class="start_planning_button">
-                            <button type="submit" class="start_planning">Start Planning</button>
+        <!-- <section class="preview">
+            <div class="wrapper">
+                <div class="preview_background">
+                    <div class="plan_your_trip">
+                        <h1 class="title">Explore the beauty of<br> the World</h1>
+                        <p class="title_text">Receive personalized recommendations for countries, hotels, activities and more</p>
+                        <div class="planning_form">
+                            <input type="text" class="planning_form_search" name="user_like_to_do" placeholder="What would you like to do?">
+                            <div class="start_planning_button">
+                                <button type="submit" class="start_planning">Start Planning</button>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </section>
-        </div>
-        <div class="wrapper">
-            <section class="steps">
+            </div>
+        </section> -->
+        <!-- <section class="steps">
+            <div class="wrapper">
                 <h2 class="topic" id="plan_trip">3 STEPS TO THE PERFECT TRIP</h2>
                     <div class="perfect_trip">
                         <div class="steps_pics">
@@ -62,10 +75,10 @@
                             <div class="steps_text">We will give you recommendations</div>
                         </div>
                     </div>
-            </section>
-        </div>
-        <div class="wrapper">
-            <section class="destinations">
+            </div>
+        </section>
+        <section class="destinations">
+            <div class="wrapper">
                 <h2 class="topic" id="destinations">POPULAR DESTINATIONS</h2>
                 <div class="carousel">
                     <div class="destination">
@@ -81,26 +94,29 @@
                         <div class="destination_country">USA</div>
                     </div>
                 </div>
-                <label class="destination_radio">
-                    <input class="radio__input" type="radio" name="switch">
-                    <span class="radio__box"></span>
-                </label>
-                <label class="destination_radio">
-                    <input class="radio__input" type="radio" name="switch" checked>
-                    <span class="radio__box"></span>
-                </label>
-                <label class="destination_radio">
-                    <input class="radio__input" type="radio" name="switch">
-                    <span class="radio__box"></span>
-                </label>
+                <div class="carosuel_radio">
+                    <label class="destination_radio">
+                        <input class="radio__input" type="radio" name="switch">
+                        <span class="radio__box"></span>
+                    </label>
+                    <label class="destination_radio">
+                        <input class="radio__input" type="radio" name="switch" checked>
+                        <span class="radio__box"></span>
+                    </label>
+                    <label class="destination_radio">
+                        <input class="radio__input" type="radio" name="switch">
+                        <span class="radio__box"></span>
+                    </label>
+                </div>
                 <div class="find_more">
                     <button type="submit" class="find"><img src="./assets/img/arrow-right.svg" alt="arrow">Find More</button>
                 </div>
-            </section>
-        </div>
-        <div class="wrapper">
-            <section class="stories">
-                <h2 class="topic" id="travel_stories">TRAVEL STORIES</h2>
+            </div>
+        </section>
+        <section class="stories">
+            <div class="wrapper">
+                <div class="stories_content">
+                    <h2 class="topic" id="travel_stories">TRAVEL STORIES</h2>
                 <div class="travel_stories">
                     <div class="travel_stories_background">
                         <div class="story">
@@ -156,8 +172,9 @@
                         </div>
                     </div>
                 </div>
-            </section>
-        </div>
+                </div>
+            </div>
+        </section>
     </main>
     <footer>
         <div class="wrapper">
@@ -178,7 +195,7 @@
                 </div>
             </div>
         </div>
-    </footer>
+    </footer> -->
     <script src="index.js"></script>
 </body>
 </html>

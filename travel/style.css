@@ -2,7 +2,7 @@
     font-family: 'Red Hat Text';
     font-style: normal;
     font-weight: 500;
-    src: url('./assets/fonts/RedHatText-Medium.ttf'); 
+    src: url('./assets/fonts/RedHatText-Medium.ttf');
   }
 
   @font-face {
@@ -10,17 +10,18 @@
     font-weight: 600;
     src: url('./assets/fonts/Magra-Bold.ttf');
   }
+
   @font-face {
     font-family: 'Aleo';
     font-weight: 400;
     src: url('./assets/fonts/Aleo-Regular.ttf');
   }
-    
+
   @font-face {
-      font-family: 'Aleo';
-      font-style: italic;
-      font-weight: 700;
-      src: url('./assets/fonts/Aleo-BoldItalic.ttf');
+    font-family: 'Aleo';
+    font-style: italic;
+    font-weight: 700;
+    src: url('./assets/fonts/Aleo-BoldItalic.ttf');
   }
 
   @font-face {
@@ -29,7 +30,7 @@
     font-weight: 400;
     src: url('./assets/fonts/Aleo-Italic.ttf');
   }
-   
+
   @font-face {
     font-family: 'Aleo';
     font-weight: 700;
@@ -43,7 +44,11 @@
   html {
     scroll-behavior: smooth;
   }
-  
+
+  body {
+    margin: 0;
+  }
+
   .wrapper {
     max-width: 1440px;
     margin: 0 auto;
@@ -74,7 +79,6 @@
     font-weight: 500;
     font-size: 16px;
     line-height: 21px;
-    color: #FFFFFF;
     padding-right: 42px;
   }
 
@@ -84,15 +88,42 @@
     transition: 0.5s;
   }
 
+  .nav_list_inactive {
+    display: none;
+  }
+
   .nav_list:hover {
     color: #0D606F;
     cursor: pointer;
   }
 
-  .header_nav_list:hover {
-    color: #0D606F;
-    cursor: pointer;
-    transition: 0.5s;
+  .header-burger {
+    display: none;
+    width: 26px;
+    height: 16px;
+    position: relative;
+  }
+
+  .burger-line {
+    display: block;
+    width: 100%;
+    height: 2.6px;
+    background-color: #FFFFFF;
+    position: absolute;
+    border-radius: 3px;
+  }
+
+  .burger-line-first {
+    top: 0;
+  }
+
+  .burger-line-second {
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  .burger-line-third {
+    bottom: 0;
   }
 
   .logo {
@@ -123,7 +154,7 @@
     cursor: pointer;
   }
 
-  .preview {
+  .preview_background {
     background-image: url('./assets/img/garrett-parker-DlkF4-dbCOU-unsplash1.jpg');
     height: 765px;
     margin-top: -90px;
@@ -159,7 +190,7 @@
     font-weight: 500;
     font-size: 40px;
     text-align: center;
-    color:#F2785C;
+    color: #F2785C;
   }
 
   .planning_form {
@@ -223,7 +254,7 @@
 
   .steps {
     margin-top: 80px;
-  } 
+  }
 
   .steps_text {
     font-family: 'Aleo';
@@ -286,14 +317,14 @@
   .country_pic {
     border-radius: 16px;
   }
-  
+
   .destination {
     position: relative;
   }
 
   .destination_country {
     position: absolute;
-    left:15px;
+    left: 15px;
     bottom: 44px;
     font-family: 'Red Hat Text';
     font-size: 32px;
@@ -312,26 +343,26 @@
   }
 
   .radio__input {
-      position: absolute;
-      appearance: none;
+    position: absolute;
+    appearance: none;
   }
 
   .radio__box {
-      position: absolute;
-      top: 0;
-      left: 0;
-      display: inline-block;
-      width: 20px;
-      height: 20px;
-      background-color: rgba(242, 120, 92, 0.5);
-      border-radius: 50%;
-      transition: all 0.2s ease;
-      cursor: pointer;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-color: rgba(242, 120, 92, 0.5);
+    border-radius: 50%;
+    transition: all 0.2s ease;
+    cursor: pointer;
   }
 
-  .radio__input:checked + .radio__box {
-      
-      background-color: #F2785C;
+  .radio__input:checked+.radio__box {
+
+    background-color: #F2785C;
   }
 
   .find_more {
@@ -356,39 +387,39 @@
     font-size: 24px;
     color: #FFFFFF;
     transition: 0.5s;
-}
+  }
 
-.find:hover {
+  .find:hover {
     transform: scale(1.1);
     cursor: pointer;
-}
+  }
 
-.stories {
-  margin-top: 81px;
-}
+  .stories {
+    margin-top: 81px;
+  }
 
-.story_img {
-  border-radius: 16px;
-  box-shadow: 0px 4px 4px #0d606f;
-}
+  .story_img {
+    border-radius: 16px;
+    box-shadow: 0px 4px 4px #0d606f;
+  }
 
-.travel_stories_background {
+  .travel_stories_background {
     height: 1270px;
     background: rgba(255, 255, 255, 0.7);
-}
+  }
 
-.travel_stories {
+  .travel_stories {
     margin-top: 40px;
     height: 1331px;
     background: url(./assets/img/Rectangle33.jpg);
-}
+  }
 
-/*.travel_stories_description {
+  /*.travel_stories_description {
     display: flex;
     flex-flow: column;
 }*/
 
-.travel_stories_title {
+  .travel_stories_title {
     font-family: 'Aleo';
     font-style: normal;
     font-weight: 400;
@@ -396,13 +427,13 @@
     line-height: 42px;
     color: #0D606F;
     margin: 0;
-}
+  }
 
-.travel_stories_description {
+  .travel_stories_description {
     padding-left: 40px;
-}
+  }
 
-.travel_stories_text {
+  .travel_stories_text {
     font-family: 'Aleo';
     font-style: normal;
     font-weight: 400;
@@ -411,56 +442,143 @@
     color: #0D606F;
     margin: 0;
     margin-top: 23px;
-}
+  }
 
-.read_more {
+  .read_more {
     font-family: 'Aleo';
     font-weight: 700;
     font-size: 20px;
     line-height: 24px;
     color: #0D606F;
-}
+  }
 
-.story {
+  .story {
     display: flex;
     padding: 0 120px;
     margin-top: 30px;
-}
+  }
 
-.story:nth-child(1) {
-  padding-top: 40px;
-}
+  .story:nth-child(1) {
+    padding-top: 40px;
+  }
 
-.footer {
-  display: flex;
-  align-items: center;
-  margin-top: -60px;
-  justify-content: flex-end;
-  padding-right: 120px;
-  height: 60px;
-  gap: 270px;
-}
+  .footer {
+    display: flex;
+    align-items: center;
+    margin-top: -60px;
+    justify-content: flex-end;
+    padding-right: 120px;
+    height: 60px;
+    gap: 270px;
+  }
 
-.copyright {
-  font-family: 'Red Hat Text';
-  font-size: 16px;
-  line-height: 21px;
-  color: #FFFFFF;
-}
+  .copyright {
+    font-family: 'Red Hat Text';
+    font-size: 16px;
+    line-height: 21px;
+    color: #FFFFFF;
+  }
 
-.social-list {
-  display: flex;
-  align-items: center;
-}
+  .social-list {
+    display: flex;
+    align-items: center;
+  }
 
-.social-item {
-  padding-left: 21px;
-  list-style: none;
-  transition: 0.5s;
-}
+  .social-item {
+    padding-left: 21px;
+    list-style: none;
+    transition: 0.5s;
+  }
 
-.social-item:hover {
-  filter:invert(16%) sepia(65%) 
-  saturate(138%) hue-rotate(7deg) brightness(92%)
-  contrast(87%);
-}
+  .social-item:hover {
+    filter: invert(16%) sepia(65%) saturate(138%) hue-rotate(7deg) brightness(92%) contrast(87%);
+  }
+
+  /*media start*/
+  @media screen and (max-width:390px) {
+
+    * {
+      box-sizing: border-box;
+    }
+
+    .wrapper {
+      max-width: 390px;
+      margin: 0 auto;
+    }
+
+    .preview_background {
+      background-image: url(assets/img/garrett-parker-DlkF4-dbCOU-unsplash2.jpg);
+    }
+
+    .header-burger {
+      display: block;
+    }
+
+    .company_name {
+      display: none;
+    }
+
+    .header_login {
+      display: none;
+    }
+
+    .nav {
+      position: fixed;
+      height: 100vh;
+      top: 0;
+      right: 0;
+      z-index: 10;
+      transform: translateX(100%);
+      transition: .2s all linear;
+    }
+
+    .nav_list_inactive {
+      display: block;
+    }
+
+    .nav-active {
+      transform: translateX(0);
+      width: 165px;
+      height: 250px;
+      background: #F2785C;
+      box-shadow: 0px 4px 3px rgba(13, 96, 111, 0.25);
+      border-radius: 10px;
+    }
+
+    .nav-close {
+      width: 30px;
+      height: 30px;
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      z-index: 11;
+    }
+
+    .nav-close-line {
+      display: block;
+      width: 100%;
+      height: 3px;
+      border-radius: 3px;
+      background-color: #E5E5E5;
+      position: absolute;
+      top: 50%;
+    }
+
+    .nav-close-line:first-child {
+      transform: translateY(-50%) rotate(45deg);
+    }
+
+    .nav-close-line:last-child {
+      transform: translateY(-50%) rotate(-45deg);
+    }
+
+    .header_nav {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      padding-top: 40px;
+      margin-right: -25px;
+    }
+
+
+  }
