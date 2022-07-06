@@ -206,7 +206,7 @@
   }
 
   .start_planning_button {
-    padding-right: 18px;
+    margin-right: 18px;
   }
 
   .start_planning {
@@ -398,9 +398,12 @@
     margin-top: 81px;
   }
 
-  .story_img {
+  .story_img img {
+    display: block;
     border-radius: 16px;
     box-shadow: 0px 4px 4px #0d606f;
+    max-width: 100%;
+    height: auto;
   }
 
   .travel_stories_background {
@@ -506,10 +509,6 @@
       margin: 0 auto;
     }
 
-    .preview_background {
-      background-image: url(assets/img/garrett-parker-DlkF4-dbCOU-unsplash2.jpg);
-    }
-
     .header-burger {
       display: block;
     }
@@ -520,6 +519,13 @@
 
     .header_login {
       display: none;
+    }
+
+    .header_wrapper {
+      background-image: url(assets/img/garrett-parker-DlkF4-dbCOU-unsplash2.jpg);
+      box-shadow: none;
+      padding: 0 24px;
+      padding-top: 26px;
     }
 
     .nav {
@@ -578,6 +584,48 @@
       align-items: flex-end;
       padding-top: 40px;
       margin-right: -25px;
+    }
+
+    .preview_background {
+      background-image: url(assets/img/garrett-parker-DlkF4-dbCOU-unsplash2.jpg);
+      background-repeat: no-repeat;
+      height: 390px;
+  }
+   
+    .title {
+      display: none;
+    }
+
+    .title_text {
+      display: none;
+    }
+
+    .plan_your_trip {
+      padding-left: 15px;
+    }
+
+    .planning_form {
+      padding: 0;
+      width: 360px;
+      height: 48px;
+      margin-top: 20px;
+    }
+
+    .start_planning {
+      width: 92px;
+      height: 30px;
+      background: #0D606F;
+      box-shadow: 0px 0px 3px rgba(13, 96, 111, 0.08), 0px 2px 3px rgba(13, 96, 111, 0.16);
+      font-size: 11px;
+      line-height: 15px;
+      margin-right: -10px;
+    }
+
+    .planning_form_search {
+      font-size: 14px;
+      line-height: 17px;
+      color: #F2785C;
+      padding-left: 16px;
     }
 
 
