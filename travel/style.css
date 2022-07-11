@@ -247,7 +247,7 @@
   }
 
   .steps {
-    margin-bottom: 96px;
+    margin-bottom: 76px;
   }
 
   .perfect_trip {
@@ -315,9 +315,14 @@
     margin-top: 48px;
   }
 
+  .carousel_mobile {
+    display: none;
+  }
+
   .carousel_radio {
     display: flex;
     justify-content: center;
+    margin-bottom: 40px;
   }
 
   .country_pic {
@@ -375,23 +380,27 @@
     width: 228px;
     margin-left: auto;
     margin-right: auto;
-
   }
 
   .find {
     display: flex;
     align-items: center;
-    justify-content: space-around;
-    padding: 0 27px;
+    justify-content: space-evenly;
+    width: 228px;
+    height: 59px;
     background: #0D606F;
     border: 0px;
     border-radius: 10px;
-    width: 228px;
-    height: 59px;
     font-family: 'Red Hat Text';
     font-size: 24px;
     color: #FFFFFF;
     transition: 0.5s;
+  }
+
+  .arrow {
+    background-image: url(assets/img/arrow-right.svg);
+    width: 36px;
+    height: 23px;
   }
 
   .find:hover {
@@ -652,11 +661,14 @@
       padding: 0 16px;
     }
 
+    .steps {
+      margin-bottom: 0;
+    }
+
     .steps_text {
       font-size: 10px;
       line-height: 12px;
       margin-top: 0;
-      color: #F2785C;
     }
 
     .steps_pic {
@@ -693,6 +705,71 @@
     .steps_pics:nth-child(3) {
       text-align: end;
       max-width: 80px;
+    }
+
+    .carousel {
+      display: none;
+    }
+
+    .carousel_radio {
+      display: none;
+    }
+
+    .carousel_mobile {
+      display: block;
+      background-image: url(assets/img/Rectangle26.jpg);
+      border-radius: 16px;
+      height: 210px;
+      max-width: 360px;
+      margin: 0 auto;
+    }
+
+    .destination_country_mobile {
+      position: absolute;
+      font-family: 'Red Hat Text';
+      font-style: normal;
+      font-weight: 500;
+      color: #FFFFFF;
+      font-size: 20px;
+      line-height: 26px;
+      left: 31px;
+      bottom: 328px
+    }
+
+    .arrow_left {
+      position: absolute;
+      background-image: url(assets/img/arrow_left_slider.svg);
+      width: 15px;
+      height: 25px;
+      left: 27px;
+      bottom: 245px;
+    }
+
+    .arrow_right {
+      position: absolute;
+      background-image: url(assets/img/arrow_right_slider.svg);
+      width: 15px;
+      height: 25px;
+      right: 27px;
+      bottom: 245px;
+    }
+
+    .find_more {
+      margin-top: 9px;
+      width: 92px;
+    }
+
+    .find {
+      font-size: 11px;
+      line-height: 15px;
+      width: 92px;
+      height: 30px;
+    }
+
+    .arrow {
+      background-image: url(assets/img/arrow-right-mobile.svg);
+      width: 9px;
+      height: 6px;
     }
 
 
