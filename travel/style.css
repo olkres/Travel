@@ -431,11 +431,6 @@
     background: url(./assets/img/Rectangle33.jpg);
   }
 
-  /*.travel_stories_description {
-    display: flex;
-    flex-flow: column;
-}*/
-
   .travel_stories_title {
     font-family: 'Aleo';
     font-style: normal;
@@ -571,8 +566,8 @@
     }
 
     .nav-close {
-      width: 30px;
-      height: 30px;
+      width:20px;
+      height: 20px;
       position: absolute;
       top: 10px;
       left: 10px;
@@ -601,8 +596,10 @@
       display: flex;
       flex-direction: column;
       align-items: flex-end;
-      padding-top: 40px;
-      margin-right: -25px;
+      padding-top: 24px;
+      margin-right: -24px;
+      padding-left: 0;
+      height: 204px
     }
 
     .preview_background {
@@ -724,6 +721,10 @@
       margin: 0 auto;
     }
 
+    .destinations {
+      margin-bottom: 20px;
+    }
+
     .destination_country_mobile {
       position: absolute;
       font-family: 'Red Hat Text';
@@ -770,6 +771,45 @@
       background-image: url(assets/img/arrow-right-mobile.svg);
       width: 9px;
       height: 6px;
+    }
+
+    .travel_stories_title {
+      font-weight: 700;
+      font-size: 11px;
+      line-height: 13px;
+    }
+
+    .travel_stories_description {
+      padding-left: 7px;
+    }
+
+    .travel_stories_text, .read_more {
+      font-size: 9px;
+      line-height: 11px;
+      margin-top: 3px;
+    }
+
+    .story_img {
+      width: 400%;
+    }
+
+    .story {
+      padding: 10px 15px 0;
+    }
+
+    .story:nth-child(1) {
+      padding-top: 10px;
+    }
+
+    .travel_stories {
+      margin-top: 0;
+      background-image: url(assets/img/Rectangle28.jpg);
+      background-repeat: no-repeat;
+      height: 831px;
+    }
+
+    .travel_stories_background {
+      height: 628px;
     }
 
 
