@@ -1,8 +1,11 @@
-console.log(`1. Вёрстка валидная +10
-2. Вёрстка семантическая +20\n
-3. Вёрстка соответствует макету +48\n
-Присутствуют небольшие отклонения, но в пределах 10px\n
-4. Требования к css + 12\n
-5. Интерактивность, реализуемая через css +15\n
-Итого: 105 баллов`
-);
+(function () {
+    const burgerItem = document.querySelector('.burger');
+    const menu = document.querySelector('.nav');
+    const menuCloseItem = document.querySelector('.nav-close');
+    menuCloseItem.addEventListener('click', () => {
+        menu.classList.remove('nav-active');
+    });
+    burgerItem.addEventListener('click', () => {
+        menu.classList.add('nav-active');
+    });
+}());
