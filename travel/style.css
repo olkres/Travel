@@ -49,6 +49,10 @@
     margin: 0;
   }
 
+  input {
+    outline: none;
+  }
+
   .wrapper {
     max-width: 1440px;
     margin: 0 auto;
@@ -236,7 +240,7 @@
     font-weight: 400;
     font-size: 24px;
     line-height: 29px;
-    border: 0px;
+    border: none;
     color: #F2785C;
     background-color: rgba(0, 0, 0, 0);
     padding-left: 41px;
@@ -853,8 +857,24 @@
     .travel_stories_background {
       height: 628px;
     }
+ }
 
+ /* POPUP START*/
 
+ .popup {
+  width: 650px;
+  height: 660px;
+  background: linear-gradient(180deg, #FFFFFF 6.15%, #0D606F 202.69%);
+ }
 
+ .with_facebook {
+  background-color: #1877F2;
+  box-shadow: 0px 0px 3px rgba(13, 96, 111, 0.08), 0px 2px 3px rgba(13, 96, 111, 0.16);
+  border-radius: 10px;
+ }
 
-  }
+ .with_google {
+  background: #FFFFFF;
+  box-shadow: 0px 0px 3px rgba(13, 96, 111, 0.08), 0px 2px 3px rgba(13, 96, 111, 0.16);
+  border-radius: 10px;
+ }
