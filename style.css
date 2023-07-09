@@ -147,3 +147,308 @@
 }
 
 /*header end*/
+
+/*main start*/
+.preview_background {
+    background-image: url('./assets/img/garrett-parker-DlkF4-dbCOU-unsplash1.jpg');
+    height: 765px;
+    margin-top: -90px;
+    margin-bottom: 80px; 
+}
+.plan_your_trip {
+    padding-top: 122px;
+    padding-left: 120px;
+}
+.title {
+    margin: 0;
+    font-family: 'Aleo';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 80px;
+    line-height: 96px;
+    color: #FFFFFF;
+}
+.title_text {
+    margin-top: 32px;
+    font-family: 'Aleo';
+    font-style: italic;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    color: #FFFFFF;
+}
+.planning_form {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 46px;
+    width: 892px;
+    height: 95px;
+    border-radius: 16px;
+    background: rgba(255, 255, 255, 0.7);
+    border: none;
+}
+.planning_form_search {
+    font-family: 'Aleo';
+    font-style: italic;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    border: none;
+    color: #F2785C;
+    background-color: rgba(0, 0, 0, 0);
+    padding-left: 41px;
+}
+.planning_form_search::placeholder {
+    color: #F2785C;
+  }
+.start_planning_button {
+    margin-right: 18px;
+}
+.start_planning {
+    background: #0D606F;
+    width: 228px;
+    height: 59px;
+    border: 0px;
+    font-family: 'Red Hat Text';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 32px;
+    color: #FFFFFF;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+.steps {
+    margin-bottom: 76px;
+}
+.topic {
+    font-family: 'Red Hat Text';
+    font-weight: 500;
+    font-size: 40px;
+    text-align: center;
+    color: #F2785C;
+}
+.perfect_trip {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+    padding: 0 132px;
+}
+.steps_pic {
+    background-color: #F2785C;
+    border-radius: 16px;
+    width: 100px;
+    height: 100px;
+}
+.steps_pics:nth-child(2) {
+    padding-left: 70px;
+  }
+.steps_text {
+    font-family: 'Aleo';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    color: #0D606F;
+    margin-top: 30px;
+}
+.pic1 { background-image: url('./assets/img/bike.svg');
+}
+.pic2 { background-image: url('./assets/img/calendar.svg');
+}
+.pic3 { background-image: url('./assets/img/plane.svg');
+}
+.pic1, .pic2, .pic3 {
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-left: auto;
+    margin-right: auto;
+}
+.destinations {
+    margin-bottom: 81px;
+}
+.carousel {
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    margin-top: 48px;
+}
+.carousel_mobile {
+    display: none;
+  }
+.destination {
+    display: flex;
+    gap: 60px;
+    position: relative;
+    left: 0;
+    transition: all ease 1s;
+}
+.destination:hover {
+    cursor: pointer;
+  }
+.destination_country {
+    margin-bottom: 5px;
+    position: relative;
+    font-family: 'Red Hat Text';
+    font-size: 32px;
+    line-height: 42px;
+    color: #FFFFFF;
+
+}
+.destination_country:nth-child(1) {
+    background-image: url(assets/img/Rectangle25.jpg);
+    border-radius: 16px;
+    width: 800px;
+    height: 800px;
+  }
+
+  .destination_country:nth-child(2) {
+    background-image: url(assets/img/Rectangle23.jpg);
+    border-radius: 16px;
+    width: 800px;
+    height: 800px;
+  }
+  
+  .destination_country:nth-child(3) {
+    background-image: url(assets/img/Rectangle24.jpg);
+    border-radius: 16px;
+    width: 800px;
+    height: 800px;
+  }
+
+  .destination_country:nth-child(4) {
+    background-image: url(assets/img/Rectangle25.jpg);
+    border-radius: 16px;
+    width: 800px;
+    height: 800px;
+  }
+
+  .destination_country:nth-child(5) {
+    background-image: url(assets/img/Rectangle23.jpg);
+    border-radius: 16px;
+    width: 800px;
+    height: 800px;
+  }
+.country {
+    position: absolute;
+    bottom: 40px;
+    left: 15px;
+}
+.destination_radio {
+    position: relative;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin: 0 3px;
+    margin-top: 19px;
+}
+.radio__input {
+    position: absolute;
+    appearance: none;
+}
+.radio__box {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-color: rgba(242, 120, 92, 0.5);
+    border-radius: 50%;
+    transition: all 0.2s ease;
+    cursor: pointer;
+}
+.radio__input:checked+.radio__box {
+
+    background-color: #F2785C;
+  }
+.find_more {
+    margin-top: 36px;
+    width: 228px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.find {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 228px;
+    height: 59px;
+    background: #0D606F;
+    border: 0px;
+    border-radius: 10px;
+    font-family: 'Red Hat Text';
+    font-size: 24px;
+    color: #FFFFFF;
+    transition: 0.5s;
+}
+.find:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+  }
+.arrow {
+    background-image: url(assets/img/arrow-right.svg);
+    width: 36px;
+    height: 23px;
+}
+.travel_stories {
+    margin-top: 40px;
+    height: 1331px;
+    background: url(./assets/img/Rectangle33.jpg);
+}
+.travel_stories_background {
+    height: 1270px;
+    background: rgba(255, 255, 255, 0.7);
+}
+.story {
+    display: flex;
+    padding: 30px 120px 0;
+}
+.story:nth-child(1) {
+    padding-top: 40px;
+  }
+
+  .story:nth-child(4) {
+    margin-bottom: 39px;
+  }
+.story_img {
+    width: 200%;
+}
+.story_img img {
+    display: block;
+    border-radius: 16px;
+    box-shadow: 0px 4px 4px #0d606f;
+    max-width: 100%;
+    height: auto;
+  }
+.travel_stories_description {
+    padding-left: 27px;
+}
+.travel_stories_title {
+    font-family: 'Aleo';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 42px;
+    color: #0D606F;
+    margin: 0;
+}
+.travel_stories_text {
+    font-family: 'Aleo';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    color: #0D606F;
+    margin: 0;
+    margin-top: 23px;
+}
+.read_more {
+    font-family: 'Aleo';
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    color: #0D606F;
+}
+/*main end*/
