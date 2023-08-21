@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Travel Portal</title>
-    <link rel="icon" href="./assets/img/favicon.jpg">
+    <link rel="icon" href="./assets/img/favicon.svg">
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -35,7 +35,7 @@
                     </div>
                 </nav>
                 <div class="header_login">
-                    <button class="button">Login</button>
+                    <button class="button" id="open_popup">Login</button>
                 </div>
                 <div class="header-burger burger">
                     <span class="burger-line burger-line-first"></span>
@@ -88,23 +88,23 @@
                 <h2 class="topic" id="destinations">POPULAR DESTINATIONS</h2>
                 <div class="carousel">
                     <div class="destination">
-                        <div class="destination_country"><span class="country">USA</span></div>
-                        <div class="destination_country"><span class="country">SPAIN</span></div>
-                        <div class="destination_country"><span class="country">JAPAN</span></div>
-                        <div class="destination_country"><span class="country">USA</span></div>
-                        <div class="destination_country"><span class="country">SPAIN</span></div>
+                        <div class="destination_country radio_5"><span class="country">USA</span></div>
+                        <div class="destination_country radio_1"><span class="country">SPAIN</span></div>
+                        <div class="destination_country radio_2"><span class="country">JAPAN</span></div>
+                        <div class="destination_country radio_3"><span class="country">USA</span></div>
+                        <div class="destination_country radio_4"><span class="country">SPAIN</span></div>
                     </div>
                 </div>
                 <div class="carousel_radio">
-                    <label class="destination_radio radio_1">
+                    <label class="destination_radio">
                         <input class="radio__input" type="radio" name="switch">
                         <span class="radio__box"></span>
                     </label>
-                    <label class="destination_radio radio_2">
+                    <label class="destination_radio">
                         <input class="radio__input" type="radio" name="switch" checked>
                         <span class="radio__box"></span>
                     </label>
-                    <label class="destination_radio radio_3">
+                    <label class="destination_radio">
                         <input class="radio__input" type="radio" name="switch">
                         <span class="radio__box"></span>
                     </label>
@@ -229,6 +229,30 @@
             </div>
         </div>
     </footer>
+    <div class="popup" id="popup">
+        <div class="popup_container">
+            <div class="popup_body">
+                <h3 class="login_popup">Log in to your account</h3>
+                <button class="with_facebook button"><img src="assets/img/facebook_popup.svg" alt="facebook_icon">Sign In with Facebook</button>
+                <button class="with_google button"><img src="assets/img/google_popup.svg" alt="google_icon">Sign In with Google</button>
+                <span class="or">or</span>
+                <form class="form_signin">
+                    <label class="email_signin">E-mail</label>
+                    <input type="email" class="input_popup">
+                    <label class="password_signin">Password</label>
+                    <input type="password" class="input_popup">
+                    <button class="signin" type="submit">Sign In</button>
+                </form>
+                <a href="#" class="forgot_pass">Forgot Your Password?</a>
+                <span class="popup_line"></span>
+                <div class="create_account">
+                    <span>Don't have an account?</span>
+                    <a href="#" class="register">Register</a>
+                </div>
+                <div class="popup_close" id="popup_close">&#10006</div>
+            </div>
+        </div>
+    </div>
     <script src="index.js"></script>
 </body>
 
